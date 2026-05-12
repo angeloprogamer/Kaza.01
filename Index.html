@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Minha Loja</title>
+<style>
+body {
+    font-family: Arial;
+    text-align: center;
+    background: #f2f2f2;
+}
+
+.card {
+    background: white;
+    width: 250px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+img {
+    width: 120px;
+}
+
+button {
+    background: #009ee3;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+button:hover {
+    background: #007bb5;
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+    <h2>Casa Digital</h2>
+
+    <img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="Casa">
+
+    <p>Preço: R$ 0,01</p>
+
+    <button onclick="pagar()">Comprar agora</button>
+</div>
+
+<script>
+function pagar() {
+    // Aqui vai o link vindo do seu backend
+    window.location.href = "create_preference.php";
+}
+</script>
+
+</body>
+</html>
